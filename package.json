@@ -1,0 +1,13 @@
+{
+  "name": "react-default-setup",
+  "version": "1.0.0",
+  "description": "React Setup",
+  "scripts": {
+    "start": "cd server && node server.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Shion",
+  "license": "ISC"
+}
