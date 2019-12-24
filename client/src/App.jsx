@@ -1,7 +1,7 @@
 // Import
 import React from 'react';
 
-import { GlobalStyle } from './utils/styles/global.styles';
+import { GlobalStyle } from 'utils/styles/global.styles';
 
 // ----------------------------------------------------------------------------------------- //
 
