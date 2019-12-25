@@ -36,6 +36,7 @@ app.get('/service-worker.js', (req, res) => {
 const options = {
   key: fs.readFileSync('./utils/http2/server.key'),
   cert: fs.readFileSync('./utils/http2/server.crt'),
+  allowHTTP1: true,
 };
 
 // Serving using HTTP2
