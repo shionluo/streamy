@@ -13,7 +13,8 @@ export const ErrorContainer = styled.div`
   align-items: center;
 
   a {
-    letter-spacing: 1px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
     color: gray;
 
     :hover {
@@ -37,11 +38,13 @@ export const ErrorInfo = styled.div`
 `;
 
 export const ErrorTitle = styled.h2`
-  font-size: 25px;
-  letter-spacing: 3px;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
 `;
 
 export const ErrorText = styled.p`
-  font-size: 18px;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
 `;
