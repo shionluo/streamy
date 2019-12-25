@@ -21,6 +21,9 @@
     }
   },
   "rules": {
-    "import/prefer-default-export": 0
+    "react/prop-types": 0,
+    "import/prefer-default-export": 0,
+    "comma-dangle": "error",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
   }
 }
