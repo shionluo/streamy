@@ -21,6 +21,14 @@ export const ErrorContainer = styled.div`
       font-weight: bold;
     }
   }
+
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+
+    a {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 export const ErrorImage = styled.div`
@@ -41,10 +49,18 @@ export const ErrorTitle = styled.h2`
   font-size: 2.5rem;
   letter-spacing: 0.3rem;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 800px) {
+    font-size: 2rem;
+  }
 `;
 
 export const ErrorText = styled.p`
   font-size: 2rem;
   letter-spacing: 0.1rem;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 800px) {
+    font-size: 1.5rem;
+  }
 `;
