@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 
 // ----------------------------------------------------------------------------------------- //
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   *,
   *::before,
   *::after {
@@ -31,3 +31,5 @@ export const GlobalStyle = createGlobalStyle`
     color: black;
   }
 `;
+
+export default GlobalStyle;
