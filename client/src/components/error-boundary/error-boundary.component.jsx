@@ -7,12 +7,9 @@ import Error from 'components/error/error.component';
 // ----------------------------------------------------------------------------------------- //
 
 class ErrorBoundary extends Component {
-  constructor() {
-    super();
-    this.state = {
-      hasErrored: false,
-    };
-  }
+  state = {
+    hasErrored: false,
+  };
 
   // Catch error in any of the children
   static getDerivedStateFromError() {

@@ -23,7 +23,9 @@
   "rules": {
     "react/prop-types": 0,
     "import/prefer-default-export": 0,
+    "react/state-in-constructor": 0,
     "comma-dangle": "error",
+    "arrow-parens": ["error", "as-needed"],
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
   }
 }
