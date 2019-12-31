@@ -1,12 +1,15 @@
 // Import
 import React from 'react';
 
+// Import - Styles
+import { HomeContainer } from './home.styles';
+
 // ----------------------------------------------------------------------------------------- //
 
 const Home = () => (
-  <div>
+  <HomeContainer>
     <h1>Wohoooooo</h1>
-  </div>
+  </HomeContainer>
 );
 
 export default Home;

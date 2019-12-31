@@ -25,7 +25,7 @@ class ErrorBoundary extends Component {
 
     // Check whether or not have error throught hasErrored state
     if (hasErrored) {
-      return <Error />;
+      return <Error height="60vh" />;
     }
 
     return children;

@@ -4,8 +4,7 @@ import styled from 'styled-components';
 // ----------------------------------------------------------------------------------------- //
 
 export const ErrorContainer = styled.div`
-  background-color: #fff4bb;
-  height: 100vh;
+  height: ${({ height }) => height || '100vh'};
   width: 100%;
   display: flex;
   flex-direction: column;

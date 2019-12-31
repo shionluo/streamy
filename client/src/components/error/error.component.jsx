@@ -16,8 +16,8 @@ import {
 
 // ----------------------------------------------------------------------------------------- //
 
-const Error = () => (
-  <ErrorContainer>
+const Error = ({ height }) => (
+  <ErrorContainer height={height}>
     <ErrorImage imageUrl={error} />
     <ErrorInfo>
       <ErrorTitle>Sorry, this page isn&apos;t available.</ErrorTitle>
