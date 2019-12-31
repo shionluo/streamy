@@ -1,5 +1,5 @@
 // Import
-const app = require('./app');
+const { express, app } = require('./app');
 const path = require('path');
 
 // Setup

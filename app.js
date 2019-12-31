@@ -15,4 +15,7 @@ app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(compression());
 
 // Export
-module.exports = app;
+module.exports = {
+  express,
+  app,
+};
