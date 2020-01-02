@@ -3,8 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Import - Redux
-// import { Provider } from 'react-redux';
-// import store from 'redux/store';
+import { Provider } from 'react-redux';
+import store from 'redux/store';
 
 // Import - App
 import App from './App';
@@ -15,9 +15,9 @@ import * as serviceWorker from './serviceWorker';
 // ----------------------------------------------------------------------------------------- //
 
 ReactDOM.render(
-  // <Provider store={store}>
-  <App />,
-  // </Provider>
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root'),
 );
 
