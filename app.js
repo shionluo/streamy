@@ -1,8 +1,11 @@
 // Import
 const express = require('express');
 const cors = require('cors');
-const enforce = require('express-sslify');
+const path = require('path');
 const compression = require('compression');
+// const enforce = require('express-sslify');
+
+// ----------------------------------------------------------------------------------------- //
 
 // Setup
 const app = express();
@@ -11,11 +14,22 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(compression());
+// app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
+// Production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client/build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
+
+// Service Worker
+app.get('/service-worker.js', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'build', 'service-worker.js'));
+});
 
 // Export
-module.exports = {
-  express,
-  app,
-};
+module.exports = app;
