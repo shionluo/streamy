@@ -1,12 +1,17 @@
 // Import
 import { combineReducers } from 'redux';
 
-// Reducers
+// Import - Reducers
+import { reducer as formReducer } from 'redux-form';
+import authReducer from './auth/auth.reducer';
+import streamsReducer from './stream/stream.reducer';
 
 // ----------------------------------------------------------------------------------------- //
 
 const rootReducer = combineReducers({
-  replaceMe: () => 'Hiiii',
+  auth: authReducer,
+  streams: streamsReducer,
+  form: formReducer,
 });
 
 export default rootReducer;

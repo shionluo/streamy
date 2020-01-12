@@ -1,6 +1,9 @@
 // Import
 import React from 'react';
 
+// Import - Components
+import StreamList from 'components/stream-list/stream-list.component';
+
 // Import - Styles
 import { HomeContainer } from './home.styles';
 
@@ -8,7 +11,7 @@ import { HomeContainer } from './home.styles';
 
 const Home = () => (
   <HomeContainer>
-    <h1>Wohoooooo</h1>
+    <StreamList />
   </HomeContainer>
 );
 
